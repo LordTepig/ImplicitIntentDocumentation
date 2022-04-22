@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImplicitIntentDocumentation</string>
+    <string name="call">CALL</string>
+    <string name="email">EMAIL</string>
+    <string name="map">MAP</string>
+    <string name="website">WEBSITE</string>
+</resources>

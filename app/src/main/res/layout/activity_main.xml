@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        app:layout_constraintTop_toBottomOf="@id/email_button"
+        app:layout_constraintStart_toStartOf="@id/email_button"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/map"
+        app:layout_constraintTop_toBottomOf="@id/call_button"
+        app:layout_constraintStart_toStartOf="@id/call_button">
+    </Button>
+
+    <Button
+        android:id="@+id/website_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        app:layout_constraintTop_toBottomOf="@id/map_button"
+        app:layout_constraintStart_toStartOf="@id/map_button"
+        app:layout_constraintEnd_toEndOf="@id/map_button"
+        >
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
